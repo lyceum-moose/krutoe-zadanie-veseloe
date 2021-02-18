@@ -24,6 +24,7 @@ class MyWidget(QMainWindow):
             pen = QtGui.QPen()
             pen.setWidth(5)
             painter.setPen(pen)
+            qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
             for i in range(10):
                 painter.drawEllipse(random.randint(100, 600), random.randint(100, 600), 70, 70)
             painter.end()
